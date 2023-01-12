@@ -37,6 +37,6 @@
 }
 
 .product__info {
-  height: 100px;
+  height: fit-content;
   margin-bottom: 15px;
 }

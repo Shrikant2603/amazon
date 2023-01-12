@@ -2,22 +2,19 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Home from './components/Home';
-import Header from './components/Header';
 import Home from './components/Home';
 import Product from './components/Product';
+import HeaderHome from './components/HeaderHome';
 function App() {
   return (
     <div className="app"> 
-      {/* <BrowserRouter>
-        <main>
+      <BrowserRouter>
+      <main>
           <Routes>
-            <Route path="/" element={<Header/>}/>
-            <Route path="/" element={<Home/>}/>
+            <Route exact path="/" element={<HeaderHome/>}/>
           </Routes>
-        </main>
-      </BrowserRouter> */}
-      <Header/>
-      <Home/>
+      </main>
+      </BrowserRouter>
     </div>
   );
 }
