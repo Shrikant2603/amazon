@@ -6,6 +6,8 @@ import { getCartTotal } from './reducer';
 
 function Subtotal() {
   const [{ cart }, dispatch] = useStateValue();
+  const digit = getCartTotal(cart);
+  console.log(digit)
   return (
     <div className="subtotal">
       <CurrencyFormat
@@ -20,7 +22,7 @@ function Subtotal() {
           </>
         )}
         decimalScale={2}
-        value={getCartTotal(cart)}
+        value={digit}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"₹"}
