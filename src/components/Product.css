@@ -25,12 +25,14 @@
 }
 
 .product > button {
-  background: #f0c14b;
+  background: #FFD814;
   border: 1px solid;
+  border-style: solid;
   margin-top: 10px;
-  border-color: hsl(43, 53%, 43%) #9c7e31 #846a29;
+  border-color: #FCD200;
   color: #111;
   cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgb(213 217 217 / 50%);
 }
 
 .product__price {
